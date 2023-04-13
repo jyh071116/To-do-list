@@ -2,6 +2,9 @@ let count = 0;
 
 function deleteInput(num){
     document.getElementById(`${num}`).remove();
+    if (document.querySelector('.userTodoList button').classList.contains('buttonX')){
+        count = 0;
+    }
 }
 
 document.querySelector('form').addEventListener('submit', function(e){
